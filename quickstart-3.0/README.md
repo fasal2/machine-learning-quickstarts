@@ -18,6 +18,7 @@ Here are your credentials to login to **[Microsoft Azure](<http://portal.azure.c
 
 In this quickstart, we will be using a subset of NYC Taxi & Limousine Commission - green taxi trip records available from [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/). The data is enriched with holiday and weather data. Based on the enriched dataset, we will learn to use the Azure Machine Learning Graphical Interface to process data, build, train, score, and evaluate a regression model to predict NYC taxi fares. To train the model, we will create Azure Machine Learning Compute resource. We will also learn to deploy the model as a scoring webservice to Azure Kubernetes Compute. Finally, we will test the deployed webservice, and review how to consume the deployed web service. We will do all of this from the Azure Machine Learning designer without writing a single line of code.
 
+# Exercise 1: Setting up the environment
 ## Task 1: Create Azure Machine Learning Compute
 
 Create a compute target in the workspace `quick-starts-ws` to run your Azure Machine Learning experiments.
