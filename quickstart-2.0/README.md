@@ -36,37 +36,8 @@ In this quickstart, you will use compute resources provided by Azure Machine Lea
 
 As part of this quickstart, we will be building a regression model to predict Taxi Fares in New York City. We will use a preprocessed labeled training data with features such as number of passengers, trip distance, datetime, holiday information and weather information.
 
-# Exercise 1: Setting up your environment 
 
-If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
-
-The labs have the following requirements:
-- Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
-
-## Azure Quotas Required
-The quickstarts depend on the capability to utilize a certain quantity of Azure resources, for which your Azure subscription will need to have sufficient quota available.
-
-The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstarts, you will need to request a quota increase thru Azure support:
-
-Compute-VM
-- Quota: Standard Dv2 Family vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 6
-
-Compute-VM
-- Quota: Total Regional vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 6
-
-# Prerequisites
-
-- If an environment is provided to you. Use the workspace named: `quick-starts-ws-XXXXX`, where `XXXXX` is your unique identifier.
-
-- If you are using your own Azure subscription. Create an Azure Machine Learning service workspace, **basic edition**, named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
-
-# Exercise 2: Azure Compute Instance Setup
+# Exercise 1: Azure Compute Instance Setup
 
 At a high level, here are the setup tasks you will need to perform to prepare your Azure Compute Instance Environment (the detailed instructions follow):
 
@@ -118,7 +89,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
    
    d. Wait for the import to complete.
 
-# Exercise 3: Complete the Quickstart
+# Exercise 2: Complete the Quickstart
 
 1. From the Jupyter Notebooks interface, navigate to the `quick-starts->machine-learning-quickstarts->quickstart-2.0->notebooks` folder where you will find all your quickstart files.
 
