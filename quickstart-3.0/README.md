@@ -18,38 +18,6 @@ Here are your credentials to login to **[Microsoft Azure](<http://portal.azure.c
 
 In this quickstart, we will be using a subset of NYC Taxi & Limousine Commission - green taxi trip records available from [Azure Open Datasets](https://azure.microsoft.com/en-us/services/open-datasets/). The data is enriched with holiday and weather data. Based on the enriched dataset, we will learn to use the Azure Machine Learning Graphical Interface to process data, build, train, score, and evaluate a regression model to predict NYC taxi fares. To train the model, we will create Azure Machine Learning Compute resource. We will also learn to deploy the model as a scoring webservice to Azure Kubernetes Compute. Finally, we will test the deployed webservice, and review how to consume the deployed web service. We will do all of this from the Azure Machine Learning designer without writing a single line of code.
 
-# Exercise 1: Setting up your environment 
-
-If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
-
-The labs have the following requirements:
-- Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
-
-## Azure Quotas Required
-The quickstart depend on the capability to utilize a certain quantity of Azure resources, for which your Azure subscription will need to have sufficient quota available.
-
-The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstart, you will need to request a quota increase thru Azure support:
-
-Compute-VM
-- Quota: Standard Dv2 Family vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 14
-
-Compute-VM
-- Quota: Total Regional vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 14
-
-## Prerequisites
-
-- Create an Azure resource group named: `QuickStarts`. See [Create Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/manage-resource-groups-portal) for details on how to create the resource group.
-
-- Create an Azure Machine Learning service workspace, **enterprise edition**, named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
-
-Next, we will upfront create two Azure Machine Learning Computes, one for running machine learning experiments and the other for deploying trained models. Creating computes can take up to 5 minutes, thus we can start the creation and move on to the quickstart to conserve time.
-
 ## Task 1: Create Azure Machine Learning Compute
 
 Create a compute target in the workspace `quick-starts-ws` to run your Azure Machine Learning experiments.
