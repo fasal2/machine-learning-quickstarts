@@ -35,37 +35,7 @@ In this quickstart, you learn how to create, run, and explore automated machine 
 
 As part of this quickstart, we will be building a regression model to predict Taxi Fares in New York City. We will use a preprocessed labeled training data with features such as number of passengers, trip distance, datetime, holiday information and weather information.
 
-# Exercise 1: Setting up your environment 
-
-If a lab environment has not be provided for you, this lab provides the instructions to get started in your own Azure Subscription.
-
-The labs have the following requirements:
-- Azure subscription. You will need a valid and active Azure account to complete this Azure lab. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/en-us/free/).
-
-## Azure Quotas Required
-The quickstart depend on the capability to utilize a certain quantity of Azure resources, for which your Azure subscription will need to have sufficient quota available.
-
-The following are the specific quotas required, if your subscription does not meet the quota requirements in the region in which you will perform the quickstart, you will need to request a quota increase thru Azure support:
-
-Compute-VM
-- Quota: Standard Dv2 Family vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 4
-
-Compute-VM
-- Quota: Total Regional vCPUs
-- Provider: Microsoft.Compute
-- SKU family: Dv2 Series
-- Required Limit: 4
-
-# Prerequisites
-
-- If an environment is provided to you. Use the workspace named: `quick-starts-ws-XXXXX`, where `XXXXX` is your unique identifier.
-
-- If you are using your own Azure subscription. Create an Azure Machine Learning service workspace, **enterprise edition**, named: `quick-starts-ws`. See [Create an Azure Machine Learning Service Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/setup-create-workspace) for details on how to create the workspace.
-
-# Exercise 2: Setup New Automated Machine Learning Experiment
+# Exercise 1: Setup New Automated Machine Learning Experiment
 
 ## Task 1: Create New Automated Machine Learning Experiment
 
@@ -159,7 +129,7 @@ Compute-VM
 
     > Note that we are setting a metric score threshold to limit the training time. In practice, for initial experiments, you will typically only set the training job time to allow AutoML to discover the best algorithm to use for your specific data.
 
-# Exercise 3: Start and Monitor Experiment
+# Exercise 2: Start and Monitor Experiment
 
 ## Task 1: Start Experiment
 
@@ -185,7 +155,7 @@ Compute-VM
 
     ![Run Details tab showing run status.](images/19.png 'Run Details')
 
-# Exercise 4: Review Best Model's Performance
+# Exercise 3: Review Best Model's Performance
 
 ## Task 1: Review Best Model Performance Metrics
 
@@ -217,7 +187,7 @@ Compute-VM
 
     ![Bar graph of top 8 important features.](images/23.png 'Model Explanations')
 
-# Exercise 5: Deploy Best Model
+# Exercise 4: Deploy Best Model
 
 ## Task 1: Deploy Model
 
@@ -253,7 +223,7 @@ Compute-VM
 
     ![Consume tab showing basic consumption information for the deployed endpoint.](images/28.png 'Consume')
 
-# Exercise 6: Challenge Experiment
+# Exercise 5: Challenge Experiment
 
 In the current experiment, the pipeline of MaxAbsScaler, RandomForest gave us the best performing model with the spearman correlation score of: 0.933. Can you expand the number of iterations for the Automated Machine Learning experiment to see if we can find a better performing model? Note that in each iteration, a new machine learning model is trained with your data.
 
